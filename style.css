@@ -71,5 +71,80 @@ section {
     align-items: center;
 }
 
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #085a7a, transparent);
+    z-index: 10;
+}
 
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section #text span {
+    font-size: 0.2em;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+}
+
+section #text {
+    position: absolute;
+    color: #004660;
+    font-size: 10vw;
+    text-align: center;
+    top: 50%;
+    line-height: 0.5em;
+    font-family: 'Rancho' cursive;
+    transform: translateY(-50%);
+}
+
+#explore {
+    Text-decoration: none;
+    padding: 10px 25px;
+    background: white;
+    color: #003549;
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+}
+
+#explore:hover {
+    background: #003549;
+    color:white;
+}
+
+.sec {
+    position: relative;
+    padding: 10%;
+    background: #085a7a;
+    padding-bottom: 15%;
+    z-index: 50;
+    overflow: hidden;
+}
+
+.sec h2 {
+    font-size: 3.5em;
+} 
+
+.sec #name {
+    font-size: 1.2em;
+    font-family: 'Rancho', cursive;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
 
