@@ -231,7 +231,100 @@ section #text {
     border-top: 1px solid rgba(255,255,255,0.5);
     border-left: 1px solid rgba(255,255,255,0.5);
     box-shadow: 20px 20px 40px rgba(0,0,0,0.2);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
     padding: 1em;
     margin-bottom: 2%;
+}
+
+.fishes {
+    position: absolute;
+    opacity: 1;
+}
+
+#fish1 {
+    top: 0%;
+}
+
+#fish2 {
+    top: 30%;
+    left: 55%;
+}
+
+#fish3 {
+    top: 57%;
+    left: 70%;
+}
+
+#fish4 {
+    top: 87%;
+    left: 65%;
+}
+
+#seabed {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+.bubbles {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    --transform-duration: 6s;
+    --transform-y: -300vh; /* Change this to adjust the bubbles */
+}
+
+.bubbles img {
+    opacity: 0;
+    animation-name: bubble;
+    animation-timing-function: linear;
+    animation-duration:  var(--transform-duration);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(var(--transform-y));
+        opacity: 1;
+    }
+}
+
+.bubbles img:nth-child(1) {
+    animation-delay: 2s;
+}
+
+.bubbles img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.bubbles img:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.bubbles img:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.bubbles img:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.bubbles img:nth-child(6) {
+    animation-delay: 4s;
+}
+
+.bubbles img:nth-child(7) {
+    animation-delay: 9s;
 }
