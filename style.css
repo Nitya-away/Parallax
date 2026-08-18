@@ -328,3 +328,93 @@ section #text {
 .bubbles img:nth-child(7) {
     animation-delay: 9s;
 }
+
+/* To adjust the white line below */
+.footer {
+    width: 100%;
+    background: #e6bb95;
+    text-align: center;
+    padding: 10px 0px;
+    color: rgb(252, 251, 251);
+    font-weight: bold;
+}
+
+.footer span {
+    color: white;
+    padding: 10px 0px;
+}
+
+.wrapper {
+    margin: 5px;
+}
+
+.wrapper .social-media {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0 , 0 , 0 , 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .social-media:hover {
+    width: 11rem;
+    text-align: left;
+}
+
+.wrapper .social-media:hover i {
+    transform: rotate(360deg);
+}
+
+.wrapper .social-media .icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.wrapper .social-media .icon i {
+    font-size: 25px;
+    line-height: 50px;
+    color: #fff;
+    transition-duration: 1s;
+    transition-property: transform;
+}
+
+.wrapper .social-media:nth-child(1) span {
+    color: #ffffff;
+}
+
+.wrapper .social-media:nth-child(2) span {
+    color: #ffffff;
+}
+
+.wrapper .social-media span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+
+#top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: green;
+    bottom: 10%;
+    right: 2%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+    color: white;
+    font-size: 25px;
+    box-shadow: 0 10px 10px #000;
+    z-index: 100;
+}
