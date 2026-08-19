@@ -418,3 +418,113 @@ section #text {
     box-shadow: 0 10px 10px #000;
     z-index: 100;
 }
+
+@media screen and (max-width: 650px) {
+
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 2em;
+        justify-content: center;
+    }
+
+    #header ul {
+        padding: 0.5em;
+    }
+
+    section #text {
+        font-size: 20vw;
+        /* Adjust according to the screen size */
+    }
+
+    section img#cloud {
+        object-fit: contain;
+        height: 600px;
+        width: 600px;
+    }
+
+    section img#bird1 {
+        object-fit: contain;
+        height: 600px;
+        width: 400px;
+    }
+
+    .sec ul li {
+        margin: 20px;
+    }
+
+    .sec ul {
+        margin: 0px 0px;
+    }
+
+    .sec h3 {
+        font-size: 1.5em;
+        margin: 20px 0px;
+    }
+
+    .sec p {
+        margin: 1% 4%;
+    }
+
+    #seabed {
+        object-fit: contain;
+        left: 0;
+        width: 750px;
+    }
+
+    .glass {
+        backdrop-filter: blue(1px);
+    }
+
+    #sea1 {
+        top: 9%;
+        width: 40%;
+    }
+
+    #sea2 {
+
+        top: 25%;
+        width: 20%;
+    }
+
+    #sea3 {
+        top: 42%;
+        width: 25%;
+    }
+
+    #sea4 {
+        top: 52%;
+        width: 25%;
+    }
+
+    #sea5 {
+        top: 72%;
+        left: 1%;
+        width: 25%;
+    }
+
+    #sea6 {
+        top: 80%;
+        right: 2%;
+        width: 15%;
+    }
+
+    #sea7 {
+        top: 95%;
+        right: 1%;
+        width: 20%;
+    }
+
+    #sea8 {
+        left: 50%;
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .wrapper .social-media:hover {
+        width: 50px;
+    }
+}
